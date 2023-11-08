@@ -103,6 +103,17 @@ Description: The XGBoost model demonstrates high predictive power, with a low MS
 
 Based on the evaluation of the regression models, the Decision Tree Regression model stands out as the best-performing model for this task. It achieved an MSE of 0.0, indicating a perfect fit to the data, which may warrant further investigation to ensure there is no overfitting.
 
+**Evaluated Decision Tree Regressor to check if it's overfitting using cross-validation and a test dataset.**
+
+It appears that the model is not overfitting. The fact that the test MSE is very low (0.00) and the test R-squared is close to 1.00 indicates that the model performs well on the test data, which is a good sign of generalization. Additionally, the average cross-validation MSE is consistent with the test MSE, suggesting that the model's performance is not significantly different on different subsets of the training data.
+
+These results indicate that the Decision Tree Regressor is a good fit for your data and is not suffering from overfitting. It's capturing the underlying patterns in the data and generalizing well to new, unseen data.
+
+**Future Predictions**
+The DecisionTreeRegressor model was saved to a file for future use. You can load this model and make predictions on new data. The R-squared value of approximately 0.8867 for your test data indicates that the model performs well when applied to unseen data.
+
+
+
 **Next Steps and Improvements:**
 
 - Further data collection: Consider gathering additional data on external factors that may impact demand and supply, such as weather conditions, holidays, and local events.
